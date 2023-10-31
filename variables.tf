@@ -189,3 +189,9 @@ variable "permissions_boundary" {
   default     = ""
   description = "ARN of the policy that is used to set the permissions boundary for the IAM replication role"
 }
+
+variable "terraform_deployment_arns" {
+  type        = set(string)
+  default     = []
+  description = "ARNs of all roles that can access state bucket for terraform deployments"
+}
