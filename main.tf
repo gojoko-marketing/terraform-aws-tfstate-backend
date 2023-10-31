@@ -291,3 +291,4 @@ resource "local_file" "terraform_backend_config" {
   filename        = local.terraform_backend_config_file
   file_permission = "0644"
 }
+
